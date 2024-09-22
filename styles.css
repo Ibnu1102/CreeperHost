@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+    color: #fff; /* Pastikan teks tetap terlihat jelas */
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px; /* Mengatur tinggi garis menjadi tipis */
+    background-color: rgba(255, 255, 255, 0.5); /* Warna garis menjadi sedikit lebih gelap */
+    margin-top: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.product-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-box h3 {
+    margin-top: 0;
+    color: #ffd700;
+}
+
+.order-button {
+    background-color: #ffd700;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Slide Menu Styles */
+.slide-menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: slide-down 0.5s forwards;
+}
+
+@keyframes slide-down {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.slide-menu-content {
+    background-color: #2c2c2c;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+#slide-menu-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Agar semua elemen mengisi lebar yang sama */
+}
+
+label {
+    margin: 10px 0 5px; /* Margin untuk label */
+    font-weight: bold; /* Mengatur label menjadi bold */
+}
+
+input[type="text"] {
+    width: 100%; /* Memastikan input mengisi 100% lebar */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
