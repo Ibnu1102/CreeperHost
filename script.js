@@ -27,7 +27,7 @@ slideMenuForm.addEventListener('submit', function(event) {
     const theme = document.getElementById('slide-theme').value;
 
     const message = `Item atau produk: ${item}\nTema atau model: ${theme}`;
-    const whatsappUrl = `https://wa.me/6282220325507?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/6283857194862?text=${encodeURIComponent(message)}`;
 
     window.location.href = whatsappUrl;
 });
